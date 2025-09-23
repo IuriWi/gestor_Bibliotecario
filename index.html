@@ -12,16 +12,16 @@
   </header>
 
   <main class="container">
-    <section class="card">
+    <section class="cartao">
       <h2>Login</h2>
-      <form action="dashboard.html" method="POST" class="form-login">
-        <label for="username">Usuário:</label>
-        <input type="text" id="username" name="username" required>
+      <form action="dashboard.html" method="POST" id="iform" class="form-login">
+        <label for="nome-usuario">Usuário:</label>
+        <input type="text" id="nome-usuario" name="nome-usuario" required>
 
-        <label for="password">Senha:</label>
-        <input type="password" id="password" name="password" required>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
 
-        <button type="submit">Entrar</button>
+        <button type="submit" id="entrar">Entrar</button>
       </form>
       <p class="link-contato">
         Precisa de ajuda? <a href="contato.html">Entre em contato</a>
@@ -32,5 +32,21 @@
   <footer>
     <p>&copy; 2025 Biblioteca Online</p>
   </footer>
+  <script>
+    const formulario = document.getElementById("iform");
+    
+    formulario.addEventListener("submit", function(entrarSite) {
+      entrarSite.preventDefault();
+    
+      const usu = document.getElementById("nome-usuario").value.trim();
+      const sen = document.getElementById("senha").value.trim();
+
+      if(usu === '' || sen === '') {
+          alert("Preencha todos os campos para continuar!");
+      } else {
+          window.location.href = "dashboard.html"
+      }
+    });
+  </script>
 </body>
 </html>

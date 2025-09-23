@@ -36,7 +36,7 @@ header h1 {
   gap: 2rem;
 }
 
-.card {
+main .cartao {
   background: #fff;
   padding: 2rem;
   border-radius: 12px;
@@ -45,7 +45,7 @@ header h1 {
   width: 100%;
 }
 
-h2 {
+main h2 {
   color: #2c3e50;
   margin-bottom: 1rem;
 }
