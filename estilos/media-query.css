@@ -6,7 +6,7 @@
     }
 
     main .cartao {
-        display: block;
+        display: inline-block;
         margin: auto;
         max-width: 300px;
         width: 100%;
