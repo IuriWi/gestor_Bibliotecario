@@ -1,4 +1,8 @@
 @media screen and (max-width: 983px) {
+    *{
+        box-sizing: border-box;
+    }
+
     .grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -8,7 +12,7 @@
     main .cartao {
         display: inline-block;
         margin: auto;
-        max-width: 300px;
+        max-width: 400px;
         width: 95%;
 
     }
