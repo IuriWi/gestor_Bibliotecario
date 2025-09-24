@@ -1,8 +1,4 @@
 @media screen and (max-width: 983px) {
-    *{
-        box-sizing: border-box;
-    }
-
     .grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -13,8 +9,6 @@
         display: inline-block;
         margin: auto;
         max-width: 400px;
-        width: 100%;
-
     }
 
     main {
