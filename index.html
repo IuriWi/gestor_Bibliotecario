@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Biblioteca - Login</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
   <header class="cabeçalho">
@@ -30,7 +30,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Biblioteca Online</p>
+    <p>&copy; 2025 Protótipo Online</p>
   </footer>
   <script>
     const formulario = document.getElementById("iform");
@@ -38,10 +38,10 @@
     formulario.addEventListener("submit", function(entrarSite) {
       entrarSite.preventDefault();
     
-      const usu = document.getElementById("nome-usuario").value.trim();
-      const sen = document.getElementById("senha").value.trim();
+      const usuario = document.getElementById("nome-usuario").value.trim();
+      const senha = document.getElementById("senha").value.trim();
 
-      if(usu === '' || sen === '') {
+      if(usuario === '' || senha === '') {
           alert("Preencha todos os campos para continuar!");
       } else {
           window.location.href = "dashboard.html"
